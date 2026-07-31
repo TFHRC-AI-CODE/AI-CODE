@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use these models, please cite the associated article."
+title: "Pavement Fatigue Life Ratio Models"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Nasimifar
+    given-names: Mahdi
+  - family-names: Nadkarni
+    given-names: Atish
+  - family-names: Zabihi
+    given-names: Salar
+  - family-names: Sivaneswaran
+    given-names: Nadarajah
+preferred-citation:
+  type: article
+  title: "Machine-learning prediction of pavement fatigue life ratio from structural inputs and TSDD measurements using physics-guided data generation"
+  authors:
+    - family-names: Nasimifar
+      given-names: Mahdi
+    - family-names: Nadkarni
+      given-names: Atish
+    - family-names: Zabihi
+      given-names: Salar
+    - family-names: Sivaneswaran
+      given-names: Nadarajah
+  journal: "Construction and Building Materials"
+  volume: 538
+  year: 2026
+  doi: "10.1016/j.conbuildmat.2026.147352"
+

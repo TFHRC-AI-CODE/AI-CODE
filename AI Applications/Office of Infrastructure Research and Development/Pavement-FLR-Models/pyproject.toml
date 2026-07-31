@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pavement-flr-models"
+version = "1.0.0"
+description = "Public inference package for binder-specific pavement fatigue life ratio models."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Mahdi Nasimifar" }
+]
+dependencies = [
+  "numpy>=1.24,<3",
+  "pandas>=2.0,<4",
+  "xgboost>=3.2,<4"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+predict-flr = "flr_model.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+flr_model = ["models/*.ubj", "models/model_manifest.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

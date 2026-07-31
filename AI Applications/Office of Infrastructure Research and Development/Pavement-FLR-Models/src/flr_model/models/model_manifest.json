@@ -1,0 +1,104 @@
+{
+  "release": "1.0.0",
+  "model_family": "binder-specific XGBoost fatigue life ratio regressors",
+  "output": "fatigue life ratio (percent)",
+  "conversion_environment": {
+    "python": "3.11.15",
+    "xgboost": "3.2.0",
+    "joblib": "1.5.3"
+  },
+  "native_feature_names": [
+    "S_450_µm_per_m",
+    "S_300_µm_per_m",
+    "S_200_µm_per_m",
+    "S100_µm_per_m",
+    "S200_µm_per_m",
+    "S300_µm_per_m",
+    "S450_µm_per_m",
+    "S600_µm_per_m",
+    "S900_µm_per_m",
+    "S1500_µm_per_m",
+    "AC_(mm)",
+    "DM_@_25_Hz_(Mpa)"
+  ],
+  "reference_temperature_c": 20,
+  "supported_binders": [
+    "PG 46-40",
+    "PG 58-34",
+    "PG 64-28",
+    "PG 70-22",
+    "PG 76-10"
+  ],
+  "models": {
+    "PG 46-40": {
+      "file": "flr_pg4640.ubj",
+      "sha256": "0e7698e44f2a9dadac4ca7b98da1f4fe1897a0e1fa6767aabada1eec54ab9c75",
+      "source_joblib_file": "XGB-FLR-Binder-4640.joblib",
+      "source_joblib_sha256": "299c5d5b182e465a211008ad13f51025049615cc8e6d26b7a5ef8b45f0195aab",
+      "n_estimators": 300,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0,
+      "reg_lambda": 5,
+      "conversion_max_abs_difference": 0.0
+    },
+    "PG 58-34": {
+      "file": "flr_pg5834.ubj",
+      "sha256": "efe5d4391a030a5a170d22b9ee7b0d448db404a226c2093510f31c4f4ab66427",
+      "source_joblib_file": "XGB-FLR-Binder-5834.joblib",
+      "source_joblib_sha256": "9a9eae42f1da3403e4466ee381d16b19df72d18d561fb594ac400913740b76b9",
+      "n_estimators": 300,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0,
+      "reg_lambda": 5,
+      "conversion_max_abs_difference": 0.0
+    },
+    "PG 64-28": {
+      "file": "flr_pg6428.ubj",
+      "sha256": "25dabddc8a5a3b1c62d12750a32fced2ba7ed1986ba7ee254e36d839255cd665",
+      "source_joblib_file": "XGB-FLR-Binder-6428.joblib",
+      "source_joblib_sha256": "c5e6b4604f148d45c74d066be692a502bd32c7736054356cb0a2ecb7da0b5d80",
+      "n_estimators": 300,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0,
+      "reg_lambda": 5,
+      "conversion_max_abs_difference": 0.0
+    },
+    "PG 70-22": {
+      "file": "flr_pg7022.ubj",
+      "sha256": "6f4664760f8225339af0c8e08243508951c18cec9081b63f90b4f82af10f37fe",
+      "source_joblib_file": "XGB-FLR-Binder-7022.joblib",
+      "source_joblib_sha256": "015e765851f6d31f279184ebd58eedd2950f811ce19c02263511e3c7bf2a485c",
+      "n_estimators": 200,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "subsample": 0.6,
+      "colsample_bytree": 0.6,
+      "reg_alpha": 1,
+      "reg_lambda": 5,
+      "conversion_max_abs_difference": 0.0
+    },
+    "PG 76-10": {
+      "file": "flr_pg7610.ubj",
+      "sha256": "f5a264706a90e415dbfc3de79c38d0f0c81b3a6724c547e9e96968ae9367e15e",
+      "source_joblib_file": "XGB-FLR-Binder-7610.joblib",
+      "source_joblib_sha256": "5729612a92c5fb78f1a5156192b90588540fb0338e5822d62a6708ec085488f9",
+      "n_estimators": 300,
+      "max_depth": 10,
+      "learning_rate": 0.05,
+      "subsample": 0.6,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0,
+      "reg_lambda": 5,
+      "conversion_max_abs_difference": 0.0
+    }
+  }
+}

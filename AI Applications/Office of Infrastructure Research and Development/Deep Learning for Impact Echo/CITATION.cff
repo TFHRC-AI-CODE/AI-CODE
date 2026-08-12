@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software or reproduced models, please cite the original research paper as below."
+title: "Deep learning models for bridge deck evaluation using impact echo"
+version: "1.0.0"
+date-released: 2026-08-12
+authors:
+  - family-names: "Dorafshan"
+    given-names: "Sattar"
+  - family-names: "Azari"
+    given-names: "Hoda"
+identifiers:
+  - type: "doi"
+    value: "10.17632/44rb96872r.1"
+  - type: "url"
+    value: "https://data.mendeley.com/datasets/44rb96872r/1"
+dataset:
+  type: dataset
+  title: "Annotated Impact Echo Dataset (bare decks)"
+  version: "1"
+  date-released: 2020-02-18
+  authors:
+    - family-names: "Dorafshan"
+      given-names: "Sattar"
+    - family-names: "Azari"
+      given-names: "Hoda"
+  doi: "10.17632/44rb96872r.1"
+  url: "https://data.mendeley.com/datasets/44rb96872r/1"
+preferred-citation:
+  type: article
+  title: "Deep learning models for bridge deck evaluation using impact echo"
+  authors:
+    - family-names: "Dorafshan"
+      given-names: "Sattar"
+    - family-names: "Azari"
+      given-names: "Hoda"
+  journal: "Construction and Building Materials"
+  volume: "263"
+  pages: "120109"
+  year: 2020
+  doi: "10.1016/j.conbuildmat.2020.120109"

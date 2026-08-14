@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the published paper below."
+authors:
+  - family-names: "Torlapati"
+    given-names: "Rahul"
+  - family-names: "Azari"
+    given-names: "Hoda"
+  - family-names: "Shokouhi"
+    given-names: "Parisa"
+title: "Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches"
+url: "https://journals.sagepub.com/doi/full/10.1177/03611981231159404"
+date-released: 2023-03-01
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Torlapati"
+      given-names: "Rahul"
+    - family-names: "Azari"
+      given-names: "Hoda"
+    - family-names: "Shokouhi"
+      given-names: "Parisa"
+  title: "Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches"
+  journal: "Transportation Research Record: Journal of the Transportation Research Board"
+  year: 2023
+  volume: 2677
+  issue: 9
+  doi: "10.1177/03611981231159404"
+  url: "https://journals.sagepub.com/doi/full/10.1177/03611981231159404"

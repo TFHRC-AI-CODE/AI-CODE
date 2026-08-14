@@ -31,5 +31,8 @@ If you use this code or the reproduced models, please cite the original paper an
 
 Contact
 -------
-For questions about the reproduction, open an issue or contact the contributors listed in `CITATION.cff`.
+
+Reproduced by: Shengxin "Chauncy" Cai (shengxin.cai.ctr@dot.gov)
+
+For questions, open an issue or contact the contributors listed in `CITATION.cff`.
 

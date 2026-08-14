@@ -32,7 +32,7 @@ If you use this code or the reproduced models, please cite the original paper an
 Contact
 -------
 
-Reproduced by: Shengxin "Chauncy" Cai (shengxin.cai.ctr@dot.gov)
+Reproduced by: Shengxin "Chauncy" Cai (Email: shengxin.cai.ctr@dot.gov)
 
 For questions, open an issue or contact the contributors listed in `CITATION.cff`.
 

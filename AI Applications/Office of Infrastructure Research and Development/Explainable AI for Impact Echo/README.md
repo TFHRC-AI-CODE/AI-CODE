@@ -4,7 +4,7 @@ Overview
 --------
 This repository contains reproduced deep learning models for classifying Impact Echo (IE) signals collected from lab-fabricated concrete slabs. The implementation reproduces and extends the methodology from the paper:
 
-"Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches" — Rahul Torlapati, Hoda Azari, and Parisa, Transportation Research Record (2023).
+"Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches" — Rahul Torlapati, Hoda Azari, and Parisa Shokouhi, Transportation Research Record (2023).
 
 The first model classifies IE signals into two categories:
 - Class 0: Intact concrete structural response.

@@ -2,13 +2,7 @@
 
 Overview
 --------
-This repository contains reproduced deep learning models for classifying Impact Echo (IE) signals collected from concrete bridge decks. The implementation reproduces and extends the methodology from the paper:
-
-"Deep learning models for bridge deck evaluation using impact echo" — Sattar Dorafshan and Hoda Azari, Construction and Building Materials (2020).
-
-The models classify IE signals into two categories:
-- Sound (Class 0): Intact concrete structural response.
-- Defected (Class 1): Presence of delamination, honeycombing, or voids.
+This repository documents a peer-reviewed AI case study, “Deep learning models for bridge deck evaluation using impact echo,” published in Construction and Building Materials. Impact echo (IE) is a widely used nondestructive evaluation technique for detecting subsurface defects, such as delamination, honeycombing, and voids, in concrete structures. This study develops deep learning models for autonomous subsurface defect detection in concrete bridge decks using IE data collected from eight laboratory fabricated concrete slabs. With pre-embedded artificial defects, the dataset contains a total of 2,016 labeled IE data. The study compares 1D convolutional neural network (CNN), 1D recurrent neural network, and 2D CNN. The 1D CNN model achieves the best with an overall accuracy of 0.88 by classifying 0.70 of the defects and 0.95 of the sound regions correctly.
 
 Project structure
 -----------------

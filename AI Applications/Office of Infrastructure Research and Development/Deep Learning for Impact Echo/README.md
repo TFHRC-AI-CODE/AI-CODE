@@ -2,9 +2,7 @@
 
 ## Overview
 
-This repository provides reproduced deep learning models for the autonomous classification of Impact Echo (IE) signals collected from concrete bridge decks. This work is a reproduction and extension of the methodology described in:
-
-> Dorafshan, S., & Azari, H. (2020). "Deep learning models for bridge deck evaluation using impact echo." *Construction and Building Materials*.
+This repository documents a peer-reviewed AI case study, “Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches,” published in Transportation Research Record. Impact echo (IE) is a widely used nondestructive evaluation technique for detecting subsurface defects, such as delamination, honeycombing, and voids, in concrete structures. This study compares two approaches for automatic IE signal classification: clustering based on expert-crafted features and deep learning (DL) using automatically extracted features, demonstrating DL’s superior analytical performance. Additionally, the research examines the explainability of trained DL models, identifying key attributions significant to IE data classification. 
 
 The models classify raw, time-domain IE waveforms and Short-Time Fourier Transform (STFT) spectrograms into two structural conditions:
 

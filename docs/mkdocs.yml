@@ -1,6 +1,6 @@
 site_name: CODE Case Study Catalog
 site_description: Open Development Environment for AI in Highway Transportation
-site_url: https://your-org.github.io/your-repo/
+site_url: https://your-org.github.io/AI-CODE/
 
 theme:
   name: material

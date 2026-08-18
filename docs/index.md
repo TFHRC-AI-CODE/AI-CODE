@@ -8,7 +8,7 @@ Welcome to the **AI-CODE Catalog**, a central repository for transportation-rela
 
 | Case Study | Domain | Agency / Partner | Tech Stack | Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **Bridge Deck Crack Detection** | Infrastructure Inspection & NDE | Iowa DOT / FHWA | PyTorch / YOLOv8x-Seg | [View Study](case-studies/infrastructure/bridge-deck-nde.md) |
+| **Pavement Fatigue Ratio Model** | Infrastructure NDE | FHWA | Deep Learning | [View Study](case-studies/infrastructure/Pavement-FLR-Models.md) |
 
 ---
 

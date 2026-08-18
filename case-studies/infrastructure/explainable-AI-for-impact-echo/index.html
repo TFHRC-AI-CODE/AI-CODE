@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://tfhrc-ai-code.github.io/AI-CODE/case-studies/infrastructure/explainable-AI-for-impact-echo/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Explainable AI - CODE User Guide</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Explainable AI";
+        var mkdocs_page_input_path = "case-studies/infrastructure/explainable-AI-for-impact-echo.md";
+        var mkdocs_page_url = "/AI-CODE/case-studies/infrastructure/explainable-AI-for-impact-echo/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> CODE User Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">INTRODUCTION</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CASE STUDIES</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Infrastructure</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../deep-learning-for-impact-echo/">Deep Learning for Impact Echo</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Explainable AI</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#project-structure">Project structure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#citation">Citation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contact">Contact</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Pavement-FLR-Models/">Pavement Fatigue Life Ratio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../safety/placeholder/">Safety</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CONTRIBUTING</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../contribution-guide/">Contribution Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../templates/case-study-template/">Case Study Template</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">CODE User Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">CASE STUDIES</li>
+          <li class="breadcrumb-item">Infrastructure</li>
+      <li class="breadcrumb-item active">Explainable AI</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/TFHRC-AI-CODE/AI-CODE/edit/master/docs/case-studies/infrastructure/explainable-AI-for-impact-echo.md">Edit on Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="explainable-ai-for-impact-echo">Explainable AI for Impact Echo</h1>
+<p><strong>Contributor:</strong> Federal Highway Administration (FHWA) Nondestructive Evaluation (NDE) Laboratory<br />
+<strong>Primary Domain:</strong> Infrastructure Inspection &amp; NDE<br />
+<strong>Date Published:</strong> 2026-08-18<br />
+<strong>Repository Link:</strong> <a href="https://github.com/TFHRC-AI-CODE/AI-CODE/tree/main/AI%20Applications/Office%20of%20Infrastructure%20Research%20and%20Development/Explainable%20AI%20for%20Impact%20Echo">View Code</a>  </p>
+<h2 id="overview">Overview</h2>
+<p>This repository documents a peer-reviewed AI case study, “Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches,” published in Transportation Research Record. Impact echo (IE) is a widely used nondestructive evaluation technique for detecting subsurface defects, such as delamination, honeycombing, and voids, in concrete structures. This study compares two approaches for automatic IE signal classification: clustering based on expert-crafted features and deep learning (DL) using automatically extracted features, demonstrating DL’s superior analytical performance. Additionally, the research examines the explainability of trained DL models, identifying key attributions significant to IE data classification. </p>
+<p>The first model classifies IE signals into two categories:
+- Class 0: Intact concrete structural response.
+- Class 1: Presence of delamination, honeycombing, or voids.</p>
+<p>The second model classifies IE signals into 5 categories:
+- Class 0: Intact concrete structural response.
+- Class 1: shallow delamination.
+- Class 2: honeycombing.
+- Class 3: void.
+- Class 4: deep delamination.</p>
+<h2 id="project-structure">Project structure</h2>
+<p>Explainable AI for impact Echo/</p>
+<ul>
+<li>notebooks and scripts</li>
+<li>data</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<p>If you use this code or the reproduced models, please cite the original paper and dataset. See <code>CITATION.cff</code> for machine-readable citation metadata.</p>
+<h2 id="contact">Contact</h2>
+<p>Reproduced by: Shengxin "Chauncy" Cai (Email: shengxin.cai.ctr@dot.gov)</p>
+<p>For questions, open an issue or contact the contributors listed in <code>CITATION.cff</code>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../deep-learning-for-impact-echo/" class="btn btn-neutral float-left" title="Deep Learning for Impact Echo"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Pavement-FLR-Models/" class="btn btn-neutral float-right" title="Pavement Fatigue Life Ratio">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/TFHRC-AI-CODE/AI-CODE" class="fa fa-code-fork" style="color: #fcfcfc"> Edit on GitHub</a>
+        </span>
+    
+    
+      <span><a href="../deep-learning-for-impact-echo/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Pavement-FLR-Models/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

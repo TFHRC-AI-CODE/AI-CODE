@@ -11,8 +11,10 @@ nav:
   - INTRODUCTION:
       - Overview: index.md
   - CASE STUDIES:
-      - Infrastructure: case-studies/infrastructure/deep-learning-for-impact-echo.md
-      - Safety:
+      - Infrastructure:
+          - Deep Learning for Impact Echo: case-studies/infrastructure/deep-learning-for-impact-echo.md
+          - Explainable AI: case-studies/infrastructure/deep-learning-for-impact-echo.md
+      - Safety: case-studies/safety/placeholder.md
   - CONTRIBUTING:
       - Contribution Guide: contribution-guide.md
       - Case Study Template: templates/case-study-template.md

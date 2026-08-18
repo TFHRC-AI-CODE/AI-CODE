@@ -1,17 +1,28 @@
-# Collaborative Open Development Environment (CODE) Catalog
+# Artificial Intelligence Code & Optimization Repository (AI-CODE)
 
-Welcome to the CODE GitHub community, bringing together FHWA, State and local transportation agencies, researchers, academia, industry, and other transportation stakeholders. Our goal is to share knowledge, tools, code, data, and lessons learned to move AI research from individual projects into practical transportation applications.
-
----
-
-## Case Study Directory
-
-| Title | Domain | Contributor / Agency | Models / Code |
-| :--- | :--- | :--- | :--- |
-| **[Bridge Deck Crack Detection](case-studies/infrastructure/bridge-deck-nde.md)** | Infrastructure & NDE | Iowa DOT / FHWA | Python / PyTorch |
+Welcome to the **AI-CODE Catalog**, a central repository for transportation-related artificial intelligence and machine learning case studies, pre-trained models, and field-tested implementations.
 
 ---
 
-## Submit Your Work
+## Featured Case Studies
 
-Whether you have a fully developed AI tool or an early-stage research prototype, your work can help others. Review our **[Contribution Guide](contribution-guide.md)** to submit your project, code, datasets, or models.
+| Case Study | Domain | Agency / Partner | Tech Stack | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Bridge Deck Crack Detection** | Infrastructure Inspection & NDE | Iowa DOT / FHWA | PyTorch / YOLOv8x-Seg | [View Study](case-studies/infrastructure/bridge-deck-nde.md) |
+
+---
+
+## Repository Resources
+
+* **[Contribution Guide](contribution-guide.md):** Guidelines for formatting, testing, and submitting new AI case studies to this catalog.
+* **[Case Study Template](templates/case-study-template.md):** Standardized Markdown template required for all case study submissions.
+
+---
+
+## How to Contribute
+
+To add a new AI model or field demonstration to this repository:
+
+1. Copy the `docs/templates/case-study-template.md` format.
+2. Add your `.md` file under the appropriate domain folder inside `docs/case-studies/`.
+3. Open a Pull Request following our [Contribution Guide](contribution-guide.md).

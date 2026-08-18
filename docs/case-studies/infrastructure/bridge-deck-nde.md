@@ -1,6 +1,6 @@
 # Automated Impact Echo using Deep Learning
 
-**Contributor:** Federal Highway Administration (FHWA) Nondestructive Evaluation (NDE) Laboratory 
+**Contributor:** Federal Highway Administration (FHWA) Nondestructive Evaluation (NDE) Laboratory
 **Primary Domain:** Infrastructure Inspection & NDE  
 **Date Published:** 2026-08-18  
 **Repository Link:** [View Code](https://github.com/TFHRC-AI-CODE/AI-CODE)  

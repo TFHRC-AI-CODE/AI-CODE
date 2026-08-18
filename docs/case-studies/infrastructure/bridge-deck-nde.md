@@ -1,8 +1,8 @@
-# Automated Bridge Deck Crack Detection Using UAV Imagery
+# Automated Impact Echo using Deep Learning
 
-**Lead Agency / Organization:** Iowa DOT / Federal Highway Administration (FHWA)  
+**Contributor:** Federal Highway Administration (FHWA) Nondestructive Evaluation (NDE) Laboratory 
 **Primary Domain:** Infrastructure Inspection & NDE  
-**Date Published:** 2024-04-15  
+**Date Published:** 2026-08-18  
 **Repository Link:** [View Code](https://github.com/TFHRC-AI-CODE/AI-CODE)  
 
 ---

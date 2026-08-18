@@ -2,7 +2,7 @@
 
 Welcome to the **AI-CODE** repository, a central hub for transportation-related artificial intelligence models, data pipelines, and research implementations.
 
-Please see the [user guide](https://tfhrc-ai-code.github.io/AI-CODE/).
+Please see the <a href="https://tfhrc-ai-code.github.io/AI-CODE/" target="_blank" rel="noopener noreferrer">user guide</a>.
 
 ---
 
@@ -20,6 +20,6 @@ This repository hosts AI case studies, pre-trained model weights, and field-test
 
 We welcome contributions from state DOTs, researchers, and industry partners:
 
-1. Review the **[Contribution Guide](https://tfhrc-ai-code.github.io/AI-CODE/contribution-guide/)** on our documentation site.
+1. Review the **<a href="https://tfhrc-ai-code.github.io/AI-CODE/contribution-guide/" target="_blank" rel="noopener noreferrer">Contribution Guide</a>** on our documentation site.
 2. Format your case study using the template located at `docs/templates/case-study-template.md`.
 3. Open a Pull Request against the `main` branch.

@@ -1,3 +1,10 @@
+# Explainable AI for Impact Echo
+
+**Contributor:** Federal Highway Administration (FHWA) Nondestructive Evaluation (NDE) Laboratory  
+**Primary Domain:** Infrastructure Inspection & NDE  
+**Date Published:** 2026-08-18  
+**Repository Link:** [View Code](https://github.com/TFHRC-AI-CODE/AI-CODE/tree/main/AI%20Applications/Office%20of%20Infrastructure%20Research%20and%20Development/Explainable%20AI%20for%20Impact%20Echo)  
+
 Overview
 --------
 This repository documents a peer-reviewed AI case study, “Classification of Impact Echo Signals Using Explainable Deep Learning and Transfer Learning Approaches,” published in Transportation Research Record. Impact echo (IE) is a widely used nondestructive evaluation technique for detecting subsurface defects, such as delamination, honeycombing, and voids, in concrete structures. This study compares two approaches for automatic IE signal classification: clustering based on expert-crafted features and deep learning (DL) using automatically extracted features, demonstrating DL’s superior analytical performance. Additionally, the research examines the explainability of trained DL models, identifying key attributions significant to IE data classification. 

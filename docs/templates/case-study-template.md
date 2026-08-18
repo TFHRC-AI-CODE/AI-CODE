@@ -1,53 +1,45 @@
-# [Case Study Title: e.g., Automated Bridge Deck Crack Detection Using UAV Imagery]
+# [Case Study Title]
 
-**Lead Agency / Organization:** [e.g., Iowa DOT / Federal Highway Administration (FHWA)][cite: 1]  
-**Primary Domain:** [Infrastructure Inspection / Asset Management / Safety / Traffic Operations][cite: 1]  
+**Lead Agency / Organization:** [e.g., State DOT / FHWA / University]  
+**Primary Domain:** [Infrastructure Inspection / Asset Management / Construction / Safety / Traffic Operations]  
 **Date Published:** [YYYY-MM-DD]  
-**Repository / Code Link:** [Link to source code directory]  
+**Repository Link:** [URL to source code or model]  
 
 ---
 
 ## 1. Executive Summary
-Provide a 2–3 sentence summary of the real-world highway transportation challenge, the AI/ML solution deployed, and the primary operational benefit.
+Brief overview of the transportation challenge and how this AI solution addresses it.
 
 ---
 
 ## 2. Problem Statement & Objectives
-* **Challenge:** Describe the baseline operational issue (e.g., manual visual inspections are time-consuming and subjective).
-* **Objective:** Define what the AI model or workflow aims to automate, optimize, or improve[cite: 1].
+* **Challenge:** Description of existing manual or legacy process.
+* **Objective:** Goal of the AI application.
 
 ---
 
 ## 3. Data & Model Specifications
 
 ### Datasets
-| Dataset Name | Type / Format | Size / Count | Open Access Link |
+| Dataset Name | Format | Count | Access Link |
 | :--- | :--- | :--- | :--- |
-| **High-Res Deck Images** | `.jpg` / 4K RGB | 2,500 images | [Download Data](#) |
-| **Defect Annotations** | `.json` / COCO Format | 12,000 bounding boxes | [Download Annotations](#) |
+| **Sample Dataset** | `.jpg` / `.csv` | 1,000 files | [Download](#) |
 
 ### Pre-Trained Models
-* **Model Architecture:** [e.g., YOLOv8x / Mask R-CNN]
-* **Weights:** [Download Pre-trained Weights (`.pt` / `.onnx`)](#)
-* **Performance Metrics:** [e.g., Precision: 92.4%, Recall: 88.1%, mAP50: 0.89]
+* **Architecture:** [e.g., YOLOv8 / ResNet]
+* **Weights File:** [Link to model weights]
 
 ---
 
 ## 4. Setup & Execution
 
-### System Requirements
-* Python 3.10+
-* CUDA-compatible GPU (NVIDIA RTX 3080 or equivalent recommended)
-
-### Quick Start Commands
-
 ```bash
-# Clone the case study directory
-git clone [https://github.com/your-org/CODE.git](https://github.com/your-org/CODE.git)
-cd CODE/case-studies/infrastructure/bridge-deck-inspection
+# Clone repository
+git clone [https://github.com/your-org/repo.git](https://github.com/your-org/repo.git)
+cd repo
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run inference on sample test data
-python detect_cracks.py --weights models/bridge_v1.pt --source data/test_images/ --output results/
+# Run inference
+python main.py --input sample_data/

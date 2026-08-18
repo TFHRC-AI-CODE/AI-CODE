@@ -8,10 +8,10 @@ Welcome to the CODE GitHub community, bringing together FHWA, State and local tr
 
 | Title | Domain | Contributor / Agency | Models / Code |
 | :--- | :--- | :--- | :--- |
-| **[Bridge Deck Crack Detection](case-studies/infrastructure/bridge-deck-nde.md)** | Infrastructure & NDE | Iowa DOT / FHWA[cite: 1] | Python / PyTorch |
+| **[Bridge Deck Crack Detection](case-studies/infrastructure/bridge-deck-nde.md)** | Infrastructure & NDE | Iowa DOT / FHWA | Python / PyTorch |
 
 ---
 
 ## Submit Your Work
 
-Whether you have a fully developed AI tool or an early-stage research prototype, your work can help others[cite: 1]. Review our **[Contribution Guide](contribution-guide.md)** to submit your project, code, datasets, or models[cite: 1].
+Whether you have a fully developed AI tool or an early-stage research prototype, your work can help others. Review our **[Contribution Guide](contribution-guide.md)** to submit your project, code, datasets, or models.

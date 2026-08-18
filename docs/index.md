@@ -1,6 +1,6 @@
-# Artificial Intelligence Code & Optimization Repository (AI-CODE)
+# Artificial Intelligence Collaborative Open Development Environment (AI-CODE)
 
-Welcome to the **AI-CODE Catalog**, a central repository for transportation-related artificial intelligence and machine learning case studies, pre-trained models, and field-tested implementations.
+Welcome to the **AI-CODE**, a central repository for transportation-related artificial intelligence and machine learning case studies, pre-trained models, and field-tested implementations.
 
 ---
 

@@ -11,7 +11,8 @@ nav:
   - INTRODUCTION:
       - Overview: index.md
   - CASE STUDIES:
-      - Infrastructure & NDE: case-studies/infrastructure/bridge-deck-nde.md
+      - Infrastructure: case-studies/infrastructure/deep-learning-for-impact-echo.md
+      - Safety:
   - CONTRIBUTING:
       - Contribution Guide: contribution-guide.md
       - Case Study Template: templates/case-study-template.md

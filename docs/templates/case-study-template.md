@@ -43,3 +43,21 @@ pip install -r requirements.txt
 
 # Run inference
 python main.py --input sample_data/
+
+
+---
+
+5. Results & Field Impact
+Performance Metrics: Precision, recall, accuracy, or inference speed benchmarks.
+
+Operational Gains: Time saved, cost reductions, or risk mitigation achieved in field trials.
+
+6. Lessons Learned & Best Practices
+Data Quality & Edge Cases: Lighting conditions, data collection quirks, or annotation challenges.
+
+Model Deployment: Tips for exporting models (e.g., ONNX, TensorRT) or running inference on edge devices.
+
+7. Contacts & Maintainers
+Primary Contact: [Contributor Name] ([Email / GitHub Handle])
+
+Contributing Agency: [State DOT / University / Company]

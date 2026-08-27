@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://tfhrc-ai-code.github.io/AI-CODE/case-studies/infrastructure/Pavement-FLR-Models/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Pavement Fatigue Life Ratio - CODE User Guide</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Pavement Fatigue Life Ratio";
+        var mkdocs_page_input_path = "case-studies/infrastructure/Pavement-FLR-Models.md";
+        var mkdocs_page_url = "/AI-CODE/case-studies/infrastructure/Pavement-FLR-Models/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> CODE User Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">INTRODUCTION</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CASE STUDIES</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Infrastructure</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../deep-learning-for-impact-echo/">Deep Learning for Impact Echo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../explainable-AI-for-impact-echo/">Explainable AI</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Pavement Fatigue Life Ratio</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#why-this-matters">Why this matters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-this-repository-provides">What this repository provides</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#required-information">Required information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ac-modulus-requirement">AC modulus requirement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#predict-from-a-csv">Predict from a CSV</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#use-from-python">Use from Python</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#study-basis-and-reported-performance">Study basis and reported performance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-intentionally-excluded">What is intentionally excluded</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#documentation-and-verification">Documentation and verification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#citation">Citation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#license">License</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#disclaimer">Disclaimer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contact">Contact</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../safety/placeholder/">Safety</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CONTRIBUTING</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../contribution-guide/">Contribution Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../templates/case-study-template/">Case Study Template</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">CODE User Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">CASE STUDIES</li>
+          <li class="breadcrumb-item">Infrastructure</li>
+      <li class="breadcrumb-item active">Pavement Fatigue Life Ratio</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="pavement-fatigue-life-ratio-models">Pavement Fatigue Life Ratio Models</h1>
+<p><strong>Contributor:</strong> Federal Highway Administration (FHWA)<br />
+<strong>Primary Domain:</strong> Infrastructure Inspection &amp; NDE<br />
+<strong>Date Published:</strong> 2026-08-18<br />
+<strong>Repository Link:</strong> <a href="https://github.com/TFHRC-AI-CODE/AI-CODE/tree/main/AI%20Applications/Office%20of%20Infrastructure%20Research%20and%20Development/Pavement-FLR-Models">View Code</a> </p>
+<h2 id="overview">Overview</h2>
+<p>This repository provides the five binder-specific XGBoost models developed in
+the associated study to estimate pavement fatigue life ratio (FLR) from
+Traffic Speed Deflection Device (TSDD) slope measurements and pavement
+structural inputs.</p>
+<p>FLR compares the predicted fatigue life of a pavement in its damaged condition
+with the predicted fatigue life of the same pavement in its initial,
+undamaged condition:</p>
+<pre><code class="language-text">FLR (%) = Nf(damaged) / Nf(initial) x 100
+</code></pre>
+<p>Higher FLR indicates that a greater proportion of the initial fatigue capacity
+remains. FLR is a normalized structural condition indicator; it is not a
+prediction of remaining service life in years.</p>
+<p>The release is intended to make the trained FLR models transparent and usable
+for research and network-level pavement screening. It is not a substitute for
+project-level investigation, testing, design, or professional engineering
+judgment.</p>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>TSDDs can collect large volumes of pavement structural-response data at
+traffic speed. These models provide a practical way to convert the full TSDD
+slope profile, together with AC thickness, damaged AC modulus, and binder
+grade, into a consistent fatigue-related structural indicator for many
+pavement segments.</p>
+<p>The associated study showed that this multi-parameter approach predicts FLR
+more effectively than relationships based on a single TSDD index alone.
+Making the trained models publicly accessible supports reproducible analysis,
+large-scale structural screening, comparison across surveys, and more informed
+prioritization of locations that may warrant detailed engineering evaluation.</p>
+<h2 id="what-this-repository-provides">What this repository provides</h2>
+<ul>
+<li>Five trained XGBoost models, one for each supported binder grade.</li>
+<li>A Python interface that validates inputs and routes each record to the
+  appropriate binder-specific model.</li>
+<li>Command-line prediction for CSV files.</li>
+<li>Verified examples drawn from the study's held-out synthetic test partition.</li>
+<li>Model documentation, limitations, provenance, validation results, and
+  artifact checksums.</li>
+<li>Automated tests for loading, prediction, routing, and invalid inputs.</li>
+</ul>
+<p>This is an <strong>inference release</strong>. It allows users to apply the trained FLR
+models, but it does not include the synthetic training database, training
+notebooks, or training scripts.</p>
+<h2 id="required-information">Required information</h2>
+<p>Each prediction requires:</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Binder grade</td>
+<td>PG 46-40, PG 58-34, PG 64-28, PG 70-22, or PG 76-10</td>
+</tr>
+<tr>
+<td>TSDD slopes</td>
+<td>Ten slopes at -450, -300, -200, +100, +200, +300, +450, +600, +900, and +1500 mm</td>
+</tr>
+<tr>
+<td>Slope unit</td>
+<td>Micrometers per meter (&micro;m/m)</td>
+</tr>
+<tr>
+<td>Slope reference condition</td>
+<td>Corrected to 20&deg;C</td>
+</tr>
+<tr>
+<td>AC thickness</td>
+<td>Millimeters (mm)</td>
+</tr>
+<tr>
+<td>Damaged AC modulus</td>
+<td>Dynamic modulus at 25 Hz in MPa</td>
+</tr>
+</tbody>
+</table>
+<p>Binder grade selects the appropriate model and is not used as a numerical
+feature. The models do not interpolate between binder grades. Users should
+select the supported binder that is technically most representative of the
+pavement being evaluated.</p>
+<p>See the <a href="docs/input_data_dictionary.md">input data dictionary</a> for exact CSV
+column names and preparation requirements.</p>
+<blockquote>
+<p><strong>Important:</strong> The package cannot determine from the input numbers whether
+slope temperature correction, modulus definition, frequency, or units are
+correct. Those checks remain the user's responsibility.</p>
+</blockquote>
+<h2 id="ac-modulus-requirement">AC modulus requirement</h2>
+<p>The FLR models require damaged AC dynamic modulus at 25 Hz as an input; they do
+not calculate it. The value may come from laboratory testing, calibrated
+pavement analysis, or another technically appropriate source.</p>
+<p>The associated study also developed a Random Forest model to estimate AC
+modulus from TSDD slopes and layer thicknesses. Its serialized artifact is
+approximately 7 GB and is not included in this GitHub release. Researchers
+interested in possible access to the companion model may contact the
+corresponding author to discuss availability.</p>
+<h2 id="installation">Installation</h2>
+<p>Python 3.10 or newer is recommended.</p>
+<pre><code class="language-bash">cd Pavement-FLR-GitHub
+python -m venv .venv
+</code></pre>
+<p>Activate the environment, then install:</p>
+<pre><code class="language-bash">python -m pip install .
+</code></pre>
+<p>For development and testing:</p>
+<pre><code class="language-bash">python -m pip install &quot;.[test]&quot;
+python -m pytest
+</code></pre>
+<h2 id="predict-from-a-csv">Predict from a CSV</h2>
+<p>The example file contains one verified synthetic test record for each binder:</p>
+<pre><code class="language-bash">predict-flr examples/example_input.csv predictions.csv
+</code></pre>
+<p>The standard output contains:</p>
+<ul>
+<li><code>flr_percent</code>: the reported prediction, bounded to the physical interval
+  from 0% to 100%.</li>
+<li><code>prediction_note</code>: a note when the raw regression result was clipped.</li>
+</ul>
+<p>To include the unchanged XGBoost regression output:</p>
+<pre><code class="language-bash">predict-flr examples/example_input.csv predictions.csv --include-raw
+</code></pre>
+<p>This adds <code>flr_raw_percent</code>. The original study router capped predictions above
+100%. The public interface also reports negative predictions as zero because a
+negative FLR has no physical meaning. This reporting safeguard does not alter
+the trained models, and it does not make an out-of-domain prediction reliable.</p>
+<h2 id="use-from-python">Use from Python</h2>
+<p>The following record is an actual synthetic example from the study's held-out
+test partition:</p>
+<pre><code class="language-python">from flr_model import FLRPredictor
+
+inputs = {
+    &quot;binder_grade&quot;: &quot;PG 46-40&quot;,
+    &quot;slope_m450_um_per_m&quot;: -229.156383,
+    &quot;slope_m300_um_per_m&quot;: -265.020643,
+    &quot;slope_m200_um_per_m&quot;: -225.252756,
+    &quot;slope_p100_um_per_m&quot;: 272.803474,
+    &quot;slope_p200_um_per_m&quot;: 244.560419,
+    &quot;slope_p300_um_per_m&quot;: 206.941119,
+    &quot;slope_p450_um_per_m&quot;: 156.716945,
+    &quot;slope_p600_um_per_m&quot;: 118.268453,
+    &quot;slope_p900_um_per_m&quot;: 70.080169,
+    &quot;slope_p1500_um_per_m&quot;: 27.015900,
+    &quot;ac_thickness_mm&quot;: 233.60,
+    &quot;damaged_ac_modulus_25hz_mpa&quot;: 1223.072362,
+}
+
+flr_percent = FLRPredictor().predict_one(inputs)
+print(f&quot;{flr_percent:.3f}%&quot;)  # 33.218%
+</code></pre>
+<p>The bundled examples are physics-guided synthetic study cases, not field
+measurements, calibration targets, or recommended pavement designs. Their
+reference FLR values are stored separately in
+<code>examples/example_reference.csv</code> and are never passed to the predictor.</p>
+<h2 id="study-basis-and-reported-performance">Study basis and reported performance</h2>
+<p>The models were developed using a physics-guided analytical database generated
+through viscoelastic pavement simulations using actual pavement structures as
+structural templates, five representative binder grades, and multiple damage
+levels. The database was randomly divided into 80% for model development and
+20% for final evaluation. A separate model was trained for each binder using
+randomized hyperparameter search and five-fold cross-validation. The
+binder-specific models were then evaluated together on the separate, unseen
+20% final test set.</p>
+<p>On the unseen 20% synthetic test set, the consolidated binder-routed framework
+reported:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th style="text-align: right;">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R-squared</td>
+<td style="text-align: right;">0.990</td>
+</tr>
+<tr>
+<td>RMSE</td>
+<td style="text-align: right;">3.452 percentage points</td>
+</tr>
+<tr>
+<td>MAE</td>
+<td style="text-align: right;">1.504 percentage points</td>
+</tr>
+</tbody>
+</table>
+<p>These results demonstrate strong agreement within the simulated study domain.
+They are not evidence of comprehensive validation across field devices,
+agencies, climates, pavement systems, or time periods.</p>
+<p>The study also applied the complete framework to TSD data collected in 2020
+and 2023 on the Roskilde temperature loop in Denmark. The resulting FLR
+distributions were directionally consistent with gradual structural
+deterioration across the two surveys. The paper describes this field
+application as an initial implementation and partial verification; broader
+long-term field evaluation remains necessary.</p>
+<h2 id="what-is-intentionally-excluded">What is intentionally excluded</h2>
+<ul>
+<li>The approximately 7 GB companion Random Forest AC-modulus model.</li>
+<li>The synthetic model-development database.</li>
+<li>Raw development notebooks and training scripts.</li>
+<li>Joblib model snapshots and the notebook-defined consolidated router.</li>
+<li>The publisher-formatted article PDF.</li>
+</ul>
+<p>These exclusions do not prevent FLR prediction when the user supplies the
+required damaged AC dynamic modulus.</p>
+<h2 id="documentation-and-verification">Documentation and verification</h2>
+<ul>
+<li><a href="MODEL_CARD.md">Model card</a></li>
+<li><a href="VALIDATION.md">Model validation and alignment report</a></li>
+<li><a href="docs/input_data_dictionary.md">Input data dictionary</a></li>
+<li><a href="docs/methodology.md">Methodology</a></li>
+<li><a href="docs/limitations.md">Intended use, limitations, and disclaimer</a></li>
+<li><a href="docs/provenance.md">Model provenance</a></li>
+</ul>
+<p>The five native UBJ artifacts reproduce the verified source models exactly at
+the raw-prediction level across all 8,837 records in the reconstructed
+held-out test partition. See <a href="VALIDATION.md">VALIDATION.md</a> for the evidence
+and scope of that statement.</p>
+<p>Model-file integrity can be checked with:</p>
+<pre><code class="language-bash">python tools/verify_checksums.py
+</code></pre>
+<h2 id="citation">Citation</h2>
+<p>If these models contribute to a publication, technical report, or engineering
+study, please cite:</p>
+<blockquote>
+<p>Nasimifar, M., Nadkarni, A., Zabihi, S., and Sivaneswaran, N. (2026).
+"Machine-learning prediction of pavement fatigue life ratio from structural
+inputs and TSDD measurements using physics-guided data generation."
+<em>Construction and Building Materials</em>, 538, 147352.
+https://doi.org/10.1016/j.conbuildmat.2026.147352</p>
+</blockquote>
+<p>Machine-readable citation metadata is provided in <a href="CITATION.cff">CITATION.cff</a>.</p>
+<h2 id="license">License</h2>
+<p>The code, documentation, and released model artifacts are provided under the
+<a href="LICENSE">Apache License 2.0</a>.</p>
+<h2 id="disclaimer">Disclaimer</h2>
+<p>The models and accompanying materials are provided on an "as is" basis for
+research, informational, and pavement-management screening purposes. No
+warranty is made regarding accuracy, completeness, suitability, or performance
+for a particular application. Users are responsible for input quality,
+engineering interpretation, and independent verification.</p>
+<p>No FHWA branding, seal, or logo is used. Reference to the associated study,
+authors, organizations, or funding source does not imply endorsement of this
+repository or of results produced by third parties.</p>
+<h2 id="contact">Contact</h2>
+<p>For technical questions, open an issue in this repository. Questions about the
+associated study or possible access to the companion AC-modulus model may be
+directed to the corresponding author, Mahdi Nasimifar
+(<code>mnasimifar@agr-us.com</code>).</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../explainable-AI-for-impact-echo/" class="btn btn-neutral float-left" title="Explainable AI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../safety/placeholder/" class="btn btn-neutral float-right" title="Safety">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../explainable-AI-for-impact-echo/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../safety/placeholder/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

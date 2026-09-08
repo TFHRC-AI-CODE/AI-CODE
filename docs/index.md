@@ -15,7 +15,7 @@ Welcome to the **AI-CODE**, a central repository for transportation-related arti
 ## Repository Resources
 
 * **[Contribution Guide](contribution-guide.md):** Guidelines for formatting, testing, and submitting new AI case studies to this catalog.
-* **[Case Study Template](templates/case-study-template.md):** Standardized Markdown template required for all case study submissions.
+* **[Case Study Template](case-study-template.md):** Standardized Markdown template required for all case study submissions.
 
 ---
 

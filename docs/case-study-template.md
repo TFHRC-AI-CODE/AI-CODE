@@ -59,6 +59,18 @@ python main.py --input sample_data/
 
 ---
 
-## 7. Contacts & Maintainers
+## 7. License
+
+Please add license information here.
+
+---
+
+## 8. Acknowledgements
+
+[Optional: Acknowledge funding programs, agency grants (e.g., FHWA, State DOTs), university lab partners, or research sponsors who supported this work.].
+
+---
+
+## 9. Contacts & Maintainers
 * **Primary Contact:** [Contributor Name] ([Email / GitHub Handle])
 * **Contributing Agency:** [State DOT / University / Company]

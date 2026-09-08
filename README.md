@@ -1,6 +1,6 @@
 # Collaborative Open Development Environment (CODE)
 
-Welcome to the **AI-CODE** repository, a central hub for transportation-related artificial intelligence models, data pipelines, and research implementations.
+Welcome to the **CODE** repository, a central hub for transportation-related artificial intelligence models, data pipelines, and research implementations.
 
 Please see the <a href="https://tfhrc-ai-code.github.io/AI-CODE/" target="_blank" rel="noopener noreferrer">user guide</a>.
 
